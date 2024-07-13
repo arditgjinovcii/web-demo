@@ -11,12 +11,14 @@
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
       rel="stylesheet"
     />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
   </head>
   <body>
-    <!-- HERO SECTION -->
-     <div class="hero-background"></div> 
-
+     <div class="hero-background">
     <section class="hero">
+
+      <!-- NAVBAR -->
       <header class="container">
         <div class="logo">
           <img src="public/logo.svg" alt="logo" />
@@ -32,56 +34,105 @@
             </ul>
           </nav>
           <button type="button" class="btn btn-icon btn-account">
-            <img src="/public/lock-icon.svg" alt="lock" />my account
+            <img src="public/lock-icon.svg" alt="lock" />my account
           </button>
         </div>
       </header>
+      <!-- END NAVBAR -->
 
-      <div class="hero_content">
-        <div class="left_arrow">
-          <img src="/public/left-arrow.svg" alt="left arrow" />
-        </div>
-        <div class="hero_statistics container">
-          <div class="hero_statistics_item">
-            <img src="/public/statistics-icon.svg" alt="" />
-            <h3>enormous data structure</h3>
-          </div>
-          <h1>Advanced statistics for bussinesess</h1>
-          <p>
-            The practice of science of collection and analyzing numerical data
-            in large amounts
-          </p>
-          <div class="hero-cta">
-            <button class="btn btn-signup">sign up</button>
-            <span>or</span>
-            <button class="btn btn-icon">
-              <img src="/public/play-icon.svg" alt="" /> see how it works
-            </button>
-          </div>
-        </div>
-        <div class="right_arrow">
-          <img src="/public/right-arrow.svg" alt="right arrow" />
-        </div>
-      </div>
 
-      <div class="statistics_cards  container">
-        <div class="statistics_card">
-          <img src="/public/books-icon.svg" alt="" />
-          <h3>500 <span>+</span></h3>
-          <p>collective databases for unlimited results</p>
-          <a href="/" class="link-green">sign up</a>
+      <div class="hero_content swiper mySwiper ">
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-wrapper">
+          <!-- first slide -->
+          <div class="swiper-slide">
+            <div class="container">
+              <div class="hero_main active ">
+                <div class="left_side">
+                    <div class="hero_main_intro">
+                      <img src="public/statistics-icon.svg" alt="" />
+                      <h3>enormous data structure</h3>
+                    </div>
+                    <h1>Advanced statistics for businesess</h1>
+                    <p>
+                      The practice of science of collection and analyzing numerical data
+                      in large amounts
+                    </p>
+                    <div class="hero-cta">
+                      <button class="btn btn-signup">sign up</button>
+                      <span>or</span>
+                      <button class="btn btn-icon btn-transparent">
+                        <img src="public/play-icon.svg" alt="" /> see how it works
+                      </button>
+                    </div>
+                </div>
+
+                <div class="right_side">
+                  <img src="public/hero_img.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- first slide -->
+
+          <!-- second slide -->
+          <div class="swiper-slide">
+            <div class="container">
+              <div class="hero_main active">
+                <div class="left_side">
+                    <div class="hero_main_intro">
+                      <img src="public/statistics-icon.svg" alt="" />
+                      <h3>enormous data structure</h3>
+                    </div>
+                    <h1>Advanced statistics for businesess</h1>
+                    <p>
+                      The practice of science of collection and analyzing numerical data
+                      in large amounts
+                    </p>
+                    <div class="hero-cta">
+                      <button class="btn btn-signup">sign up</button>
+                      <span>or</span>
+                      <button class="btn btn-icon btn-transparent">
+                        <img src="public/play-icon.svg" alt="" /> see how it works
+                      </button>
+                    </div>
+                </div>
+
+                <div class="right_side">
+                  <img src="public/hero_img.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- second side -->
         </div>
-        <div class="statistics_card">
-          <img src="/public/location-icon.svg" alt="" />
-          <h3>350 <span>+</span></h3>
-          <p>government and private collections</p>
-          <a href="/" class="link-orange">sign up</a>
-        </div>
+        <div class="swiper-button-next"></div>
       </div>
     </section>
+  </div>
+  
+  <!--STATISTICS  CARDS -->
+  <div class="statistics_cards  container">
+    <div class="statistics_card">
+      <div class="img">
+        <img src="public/books-icon.svg" alt="" />
+      </div>
+      <h3>500<span>+</span></h3>
+      <p>collective databases for unlimited results</p>
+      <a href="/" class="link-green">sign up</a>
+    </div>
+    <div class="statistics_card">
+      <div class="img">
+        <img src="public/location-icon.svg" alt="" />
+      </div>
+      <h3>350 <span>+</span></h3>
+      <p>government and private collections</p>
+      <a href="/" class="link-orange">sign up</a>
+    </div>
+  </div>
+
 
     <!-- WHAT WE DO SECTION -->
-    <div class="background"></div>
     <section class="about">
       <div class="container">
         <h2>what we do</h2>
@@ -95,7 +146,7 @@
             <img
               width="169px"
               height="169px"
-              src="/public/product-rate-4889680-4076857.svg"
+              src="public/product-rate-4889680-4076857.svg"
               alt="analysis icon"
             />
             <h3>what we do</h3>
@@ -110,7 +161,7 @@
             <img
               width="169px"
               height="169px"
-              src="/public/service.svg"
+              src="public/service.svg"
               alt="analysis icon"
             />
             <h3>service stats</h3>
@@ -125,7 +176,7 @@
             <img
               width="169px"
               height="169px"
-              src="/public/kamion.svg"
+              src="public/kamion.svg"
               alt="analysis icon"
             />
             <h3>logistic data</h3>
@@ -141,30 +192,31 @@
     </section>
   </div>
 
-    <section class="cta">
-      <div class="horizontal_card">
-        <div class="container">
-          <div class="call-icon">
-            <img src="/public/call-icon.svg" alt="" />
-          </div>
-          <p class="info">
-            This phrase has the same meaning as the above one. It’s another
-            polite and formal way to show your willingness to help.
-          </p>
-          <p class="number">049 800 900</p>
-        </div>
+  <div class="horizontal_card">
+    <div class="container">
+      <div class="call-icon">
+        <img src="public/call-icon.svg" alt="" />
       </div>
+      <p class="info">
+        This phrase has the same meaning as the above one. It’s another
+        polite and formal way to show your willingness to help.
+      </p>
+      <p class="number">049 800 900</p>
+    </div>
+  </div>
 
+  
+    <section class="cta">
       <div class="cta_cards">
         <div class="container">
             <div class="cta_card">
-            <img src="/public/Layer_x-1.svg" alt="analysis icon" />
+              <img src="public/Layer_x0020_1.svg" alt="analysis icon" />
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididun
             </p>
             <button class="btn btn-icon btn-cta">
-                <img src="/public/Path 17.svg" alt="" />
+                <img src="public/Path 17.svg" alt="" />
                 <div>
                     <span>Online use</span>
                     <span>My Account</span>
@@ -173,28 +225,28 @@
             </div>
 
             <div class="cta_card">
-                <img src="/public/Layer_x-2.svg" alt="analysis icon" />
-                <p>
+              <img src="public/Layer_x-1.svg" alt="analysis icon" />
+              <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididun
                 </p>
                 <button class="btn btn-icon btn-cta">
-                <img src="/public/gplay.svg" alt="" />
-                <div>
+                  <img src="public/gplay.svg" alt="" />
+                  <div>
                     <span>Get it on</span>
                     <span>Google Play</span>
-                </div>
+                  </div>
                 </button>
-            </div>
-
-            <div class="cta_card">
-                <img src="/public/Layer_x0020_1.svg" alt="analysis icon" />
+              </div>
+              
+              <div class="cta_card">
+              <img src="public/Layer_x-2.svg" alt="analysis icon" />
                 <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididun
                 </p>
                 <button class="btn btn-icon btn-cta">
-                <img src="/public/apple.svg" alt="" />
+                <img src="public/apple.svg" alt="" />
                 <div>
                     <span>Download on the</span>
                     <span>App store</span>
@@ -204,5 +256,15 @@
         </div>
     </div>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>
